@@ -35,3 +35,13 @@ Params size (MB): 0.07
 Estimated Total Size (MB): 0.38
 ----------------------------------------------------------------
 ```
+### Changes Performed:
+ - After every convolution layer Batch Normalization is applied except for last 2 convolutional layers.
+ - A small dropout value is added after Batch Normalization upto conv5 layers.
+ - 2x2 Max Pooling is added at initial convolutional layers.
+ - Learning rate has been reduced from 0.1 to 0.01
+
+### Results Observed:
+ - After multiple iterations and changing architecture, maximum test accuracy that was achieved was 99.34%
+ - ![image](https://github.com/RaviNaik/ERA-S6-Assignment-Solution/assets/23289802/e97f982e-23d3-4f9b-960f-23265a4d737e)
+
